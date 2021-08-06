@@ -1,0 +1,91 @@
+:root {
+    --font-size: 0.8em;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+html,
+body {
+    min-height: 100vh !important;
+    height: auto !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    border: 0;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    max-width: 500px;
+    padding: 30px 15px;
+    margin-top: 20vh;
+}
+
+body {
+    font: 1.3rem sans-serif;
+    padding: 0.5em;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#capForm {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+label {
+    float: left;
+    text-align: right;
+}
+
+input {
+    float: right;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    color: black;
+    border: 1px solid black;
+}
+
+input:invalid {
+    border: 1px solid red;
+    color: red;
+}
+
+input:valid {
+    border: 1px solid lightgreen;
+    color: lightgreen;
+}
+
+#submit {
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+    margin: auto;
+    float: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    opacity: 0.7;
+}

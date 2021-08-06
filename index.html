@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product Capture Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="bodyELe">Product Capture Form</h1>
+
+        </header>
+        <main>
+            <section>
+                <div id="capForm">
+
+                    <form id="form">
+                        <label for="product-name">Product name:</label>
+                        <input type="text" id="prodName" name="prodName" placeholder="Product name" max="9" required pattern="^([A-Z]{3})[-]([0-9]{5})$" oninvalid="this.setCustomValidity('Please follow this pattern: AAA-00000')"><br><br>
+                        <label for="vendor-number">Vendor number:</label>
+                        <input type="text" id="venNum" name="venNum" placeholder="Vendor number" max="15" required pattern="^\(([0-9]{3})\)[ ]([0-9]{3})[ ]([0-9]{4})$|^[+]([0-9]{1,3})[ ]([0-9]{2})[ ]([0-9]{2})[ ]([0-9]{3})$" oninvalid="this.setCustomValidity('Please follow this pattern: (000) 000 0000 or +0/0/0 00 00 000')"><br><br>
+                        <div class="button-container">
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
